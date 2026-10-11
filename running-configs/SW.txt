@@ -10,4 +10,3 @@ interface Ethernet0/1
  switchport mode access
  switchport access vlan 10
  spanning-tree portfast
-! Sustituir con show running-config real (ocultando secretos)
