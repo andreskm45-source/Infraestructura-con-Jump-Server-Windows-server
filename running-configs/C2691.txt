@@ -1,0 +1,41 @@
+! PLANTILLA PARCIAL. SUSTITUIR POR RUNNING-CONFIG REAL SANITIZADO.
+hostname R-CLIENTE
+interface FastEthernet0/0
+ ip address dhcp
+ ip nat outside
+ crypto map CMAP
+ no shutdown
+interface FastEthernet0/1
+ no ip address
+ no shutdown
+interface FastEthernet0/1.10
+ encapsulation dot1Q 10
+ ip address 10.7.84.1 255.255.255.128
+ ip nat inside
+ip dhcp excluded-address 10.7.84.1 10.7.84.9
+ip dhcp pool USUARIOS
+ network 10.7.84.0 255.255.255.128
+ default-router 10.7.84.1
+ dns-server 8.8.8.8 1.1.1.1
+! PARAMETROS LEGADOS SOLO DE REFERENCIA DE LABORATORIO
+crypto isakmp policy 10
+ encryption des
+ hash sha
+ authentication pre-share
+ group 2
+ lifetime 28800
+! Configurar PSK de manera privada. NUNCA subirla a GitHub.
+! crypto isakmp key <PSK_PRIVADA> address <IP_WAN_FORTIGATE>
+crypto ipsec transform-set TS-DES esp-des esp-sha-hmac
+ mode tunnel
+ip access-list extended VPN-TRAFFIC
+ permit ip 10.7.84.0 0.0.0.127 host 25.7.84.2
+ip access-list extended NAT-ACL
+ deny ip 10.7.84.0 0.0.0.127 host 25.7.84.2
+ permit ip 10.7.84.0 0.0.0.127 any
+crypto map CMAP 10 ipsec-isakmp
+ ! set peer <IP_WAN_FORTIGATE>
+ set transform-set TS-DES
+ match address VPN-TRAFFIC
+ip nat inside source list NAT-ACL interface FastEthernet0/0 overload
+! PENDIENTE: Peer real, rutas, comprobación de VPN y exportación verificada.

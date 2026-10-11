@@ -1,0 +1,13 @@
+# No publicar material sensible
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+*.crt
+.env
+.env.*
+*.secrets.*
+*backup-private*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+! PLANTILLA de configuración, verificar interfaz y comandos compatibles
+hostname SW
+vlan 10
+ name USUARIOS
+interface Ethernet0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10
+interface Ethernet0/1
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+! Sustituir con show running-config real (ocultando secretos)
