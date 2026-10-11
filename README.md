@@ -3,7 +3,7 @@
 **Laboratorio académico — PNETLab** · **Matrícula:** 2025-0784 · **FortiGate 7.0.3 / Cisco C2691 / Windows Server 2019**
 
 ## 🎥 Video demostrativo
-**[PENDIENTE: insertar aquí el enlace al video de demostración](https://github.com/andreskm45-source/Infraestructura-con-Jump-Server-Windows-server/tree/main/evidencias)**
+https://itlaedudo-my.sharepoint.com/:v:/g/personal/20250784_itla_edu_do/IQAZGMfQFaFhRYt0deEd5BbRAW13-sAJONJzi-pegdeUpzA?e=WB6Ybv&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ## Descripción
 El objetivo es que los clientes de la VLAN 10 se conecten mediante un túnel IPsec al **Jump Server**, sin acceso directo al Web Server (Sistema de Caja). El Jump Server publica aplicaciones RemoteApp y se conecta al Web Server con los servicios autorizados.
