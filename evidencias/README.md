@@ -2,11 +2,15 @@
 
 Guardar las evidencias reales con los nombres enumerados a continuación. **Todavía no existen esas capturas**: estos directorios son una guía.
 
-- **Raíz:** `01-topologia-pnetlab.png`, `02-direccionamiento.png`.
-- **fortigate/**: `01-interfaces.png`, `02-rutas.png`, `03-objetos.png`, `04-ipsec.png`, `05-politicas.png`, `06-log-permitido.png`, `07-log-bloqueado.png`.
-- **vpn/**: `01-phase1.png`, `02-phase2.png`, `03-tunel-up.png`.
-- **jump/**: `01-ad-usuarios.png`, `02-rds-coleccion.png`, `03-apps-publicadas.png`, `04-usuario-nopriv.png`, `05-usuario-priv.png`, `06-applocker.png`.
-- **web/**: `01-iis-https.png`, `02-firewall-local.png`, `03-pruebas-jump-web.png`.
-- **cisco/**: `crypto-isakmp-sa.txt`, `crypto-ipsec-sa.txt`, exportes sanitizados de comandos.
+- **Raíz:** <img width="653" height="488" alt="image" src="https://github.com/user-attachments/assets/8343f51e-bb8b-44bf-a0e1-70b42a1ccb9d" />
 
-**Antes de subir:** ocultar contraseñas, PSK, IPs públicas sensibles, nombres personales y datos internos.
+- **fortigate/**: <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/66d6e56c-d84e-45f6-81a1-37d002a2400f" />
+, <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bbb67f22-05fb-431e-877d-75f8b109e7d6" />
+, <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/13457cf2-a989-4ac1-a21c-192085c929c3" />
+, <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/961b96bf-6be3-4bf7-8cd7-5fa623858e24" />
+, <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d52182ec-c2c6-4c7d-b423-39cc050631fb" />
+,
+- **vpn/**: <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/01af20f2-e6d1-4f15-b20c-17edc0a443b0" />
+,<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7f8df3d6-96aa-45fd-99ea-58c9b8273851" />
+
+
